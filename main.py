@@ -1,1 +1,5 @@
-print("This is the main.py file")
+# variable
+
+greeting = "Hello "
+print(greeting + "sam")
+print(greeting + "man")
