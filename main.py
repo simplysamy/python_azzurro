@@ -1,10 +1,14 @@
 # Type Conversion
 
-name = 'sam'
+number_hundred = '100'
 number = 10
-# print(name + number) # Error Cannot concatenate str and int
 
-result = name + str(number)
+
+result = number_hundred + str(number)
 print(result)
+# output 10010
 
-print(type(result))
+
+result = int(number_hundred) + number
+print(result)
+# output 110
