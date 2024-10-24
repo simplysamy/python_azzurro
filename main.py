@@ -1,5 +1,10 @@
-# Type Hints
-name: str = 'John'
-number: int = 10
+# Type Conversion
 
-# With Type Hints we make our program more explicit
+name = 'sam'
+number = 10
+# print(name + number) # Error Cannot concatenate str and int
+
+result = name + str(number)
+print(result)
+
+print(type(result))
