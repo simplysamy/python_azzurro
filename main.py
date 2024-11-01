@@ -1,19 +1,8 @@
-a = 10
-b = 1 * a
+numbers = [1,2,3,4,5]
 
-print (id(a))
-print (id(b))
+print(1 in numbers) # True
 
-print(a is b) # TRUE
+print(6 in numbers) # FALSE
 
-a = 10.0
-b = 1.0 * a
-
-print (id(a)) # Both a & b have different memory address
-print (id(b))  
-
-print(a is b) # FALSE
-
-print(a is not b) # TRUE
 
 
