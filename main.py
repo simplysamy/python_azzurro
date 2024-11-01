@@ -1,14 +1,14 @@
-# Type Conversion
+print (10==5)
+# output FALSE
 
-number_hundred = '100'
-number = 10
+print (10==10)
+# output TRUE
 
+print (10!=10)
+# output False
 
-result = number_hundred + str(number)
-print(result)
-# output 10010
+print (10 > 5 and 10 < 5)
+# output False
 
-
-result = int(number_hundred) + number
-print(result)
-# output 110
+print (10 > 5 or 10 < 5)
+# output TRUE
