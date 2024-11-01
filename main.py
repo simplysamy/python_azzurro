@@ -1,14 +1,19 @@
-print (10==5)
-# output FALSE
+a = 10
+b = 1 * a
 
-print (10==10)
-# output TRUE
+print (id(a))
+print (id(b))
 
-print (10!=10)
-# output False
+print(a is b) # TRUE
 
-print (10 > 5 and 10 < 5)
-# output False
+a = 10.0
+b = 1.0 * a
 
-print (10 > 5 or 10 < 5)
-# output TRUE
+print (id(a)) # Both a & b have different memory address
+print (id(b))  
+
+print(a is b) # FALSE
+
+print(a is not b) # TRUE
+
+
