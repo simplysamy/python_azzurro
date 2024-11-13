@@ -1,55 +1,27 @@
 people: list = ['Mario', 'Luigi', 'peach', 'toad']
-people2: list[str] = ['sonic', 'tails']
 
-# List can also be defined as below
-    # people = ['Mario', 'Luigi', 'peach', 'toad']  
-    # people: list[str] = ['Mario', 'Luigi', 'peach', 'toad']
-    
+# remove element
+people.remove('peach')
 print(people)
 
-# lenght of the list
-print(len(people))
-
-#print the first element of the list
-print(people[0])
-
-# negetive index
-print(people[-1])
-
-# range of the list
-print(people[0:2])
-
-# last two elements
-print(people[-2:])  # form index number -2 till end of the list towards right
-print(people[2:])   # form index number 2 till end of the list
-
-# check if an element is in the list
-# case sensitive
-print('peach' in people)  # (Peach with capital P is not in the list)
-
-# add new element to the list
-people[0] = 'sam'
-
+people: list = ['Mario', 'Luigi', 'peach', 'toad']
+# remove element using index
+people.pop(1)
 print(people)
 
-people[0:2] = ['sam', 'hasan']
+people.pop()  # remove only the last element
 print(people)
 
-#insert an element in the list
-people.insert(2, '!!!')
+#cleaer the list 
+people.clear()
 print(people)
 
-# append to a list 
-people.append('york')
+people: list = ['Mario', 'Luigi', 'peach', 'toad']
+
+# reverse the list
+people.reverse()
 print(people)
 
-# adding one list to another
-people.extend(people2)
+# sort list aphabetically
+people.sort()
 print(people)
-
-people += people2
-print(people)
-
-# adding one list to another with new variable
-new_list = people + people2
-print(new_list)
