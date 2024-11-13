@@ -1,5 +1,6 @@
-people: tuple = ('John', 'John', 'Paul', 'George', 'Ringo') # Best practice to use pranthesis
+people: tuple = ('John', 'Paul', 'George', 'Ringo') # Best practice to use pranthesis
 
-print(people.count('John'))
+a, b, c, d = people
 
-print(people.index('John')) # Get the index of an element
+print(a)
+print(b)
