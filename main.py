@@ -1,14 +1,9 @@
-text1 = 'This is a text'
-text2 = 'This is the "car".'
-text3 =  'This is the new line\nok'
+var = "text"
 
-long_text = """This is a long text
-with multiple lines"""
+print("1 " + var + " 2")
 
-ecs_char = "My name is \"sameer\""
+new_string = "1 {var} 2"
+new_string_format = f"1 {var} 2"
 
-print(text1)
-print(text2)
-print(text3)
-print(long_text)
-print(ecs_char)
+print(new_string)
+print(new_string_format)
