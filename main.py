@@ -1,9 +1,7 @@
-var = "text"
+print (False == 0)
+print (True == 1)
 
-print("1 " + var + " 2")
+print (True == 2)
 
-new_string = "1 {var} 2"
-new_string_format = f"1 {var} 2"
-
-print(new_string)
-print(new_string_format)
+print (True + True)
+print (False + False)
