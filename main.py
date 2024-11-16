@@ -1,6 +1,5 @@
-people: tuple = ('John', 'Paul', 'George', 'Ringo') # Best practice to use pranthesis
+items: set = {'apple', 'banana', 10, True}
+print(items)
 
-a, *b = people
-
-print(a)
-print(b)
+items_dup: set = {'apple', 'banana', 10, True, 10, 'apple'}
+print(items_dup) # duplicates will be removed
