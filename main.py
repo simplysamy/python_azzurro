@@ -1,13 +1,6 @@
 items: set = {'apple', 'banana', 10, True}
 
-items.add('orange')  # add an item to the set
+#items.remove(100) # of iterm doesn't exist, it will throw an error
 
-print(items)
-
-items.update(['carrots', 15]) # it can be a list
-
-# items.update({'carrots', 15}) it can be a set
-
-# items.update(('carrots', 15))  it can be a tuple
-
+items.discard(100) # of iterm doesn't exist, it will not throw an error
 print(items)
