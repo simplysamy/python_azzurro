@@ -1,6 +1,6 @@
 users = {'user1':'mario123',
          'user2':'luigi123,'}
 
-print(users)
+user1 = users['user1']
 
-print(len(users))
+print(user1)
