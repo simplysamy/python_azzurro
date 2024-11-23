@@ -3,4 +3,4 @@ users = {'user1':'mario123',
 
 x = users.items()
 
-print(users)
+print(x)
