@@ -1,3 +1,5 @@
-a,b = 30, 20
+a, b = 30, 20
 
-print('a is greater than b') if a > b else print('b is greater than a')
+result = a if a > b else b
+
+print(result)
