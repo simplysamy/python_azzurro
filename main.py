@@ -1,6 +1,8 @@
-a = 10
+text = "hello"
 
-if a > 5:
-    print("a is greater than 5")
+if text == "hello":
+    print("Bot: Hello, how can I help you?")
+elif text == "bye":
+    print("Bot: Goodbye!")
 else:
-    print("a is not greater than 5")
+    print("Bot: I'm sorry, I don't understand.")
