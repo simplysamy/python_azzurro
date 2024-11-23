@@ -1,6 +1,6 @@
 users = {'user1':'mario123',
          'user2':'luigi123,'}
 
-x = list(users.values())
+x = users.update({'hello':123})
 
-print(x[0])
+print(users)
