@@ -4,6 +4,6 @@ users = {'user1':'mario123',
                    'banana': 5}}   # dictionary inside a dictionary
  
 
-print(users)
-print(users['items'])
-print(users['items']['apple'])
+print(users.setdefault('user1', 'There is no key'))
+
+print(users.setdefault('sam', 'There is no key'))
