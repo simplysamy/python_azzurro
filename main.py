@@ -1,5 +1,8 @@
-a, b = 10, 20
+for i in range(5):
+    print(i, end=' ')
+    
+    if i == 5:
+        break
 
-if a > b:
-    # Do nothing
-    pass
+else:
+    print('Done')   
