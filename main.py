@@ -1,6 +1,5 @@
-def do_somthing():
-    for i in range(2):
-        print("Doing something")
+def greet(name: str, greeting: str = "Hello", age: int=20):
+    print(f"{greeting}, {name}! Your age is {age}")
     
-
-do_somthing()
+    
+greet("Jhon", 'Ciao', 10 )
