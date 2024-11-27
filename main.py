@@ -1,14 +1,9 @@
-# Only print code if all iterations completed over a list
+count = 0
 
-print('Only print code if all iterations completed')
+print('Starting')
 
-num = int(input('Enter a number to check for: '))
-
-for i in range(0, 6):
-
-  if i == num:
-    break
-  print(i, ' ', end='')
-  
-else:
-  print('\nAll iterations successful')
+while count < 10:
+ print(count, ' ', end='') # part of the while loop
+ count += 1 # also part of the while loop
+ 
+print('\nDone')
