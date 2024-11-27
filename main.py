@@ -1,9 +1,7 @@
-print('Print out values in a range')
+# Now use values in a range but increment by 2
+print('Print out values in a range with an increment of 2')
 
-for i in range(0, 10):
-   print(i, '', end = '') 
-#  end = '' changes that behavior, so the next print output is 
-#  appended to the same line without adding a newline.
-  
-
+for i in range(0, 10, 2):
+ print(i, ' ', end='')
+ 
 print('\nDone')
