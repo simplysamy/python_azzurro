@@ -1,9 +1,5 @@
-count = 0
+a, b = 10, 20
 
-print('Starting')
-
-while count < 10:
- print(count, ' ', end='') # part of the while loop
- count += 1 # also part of the while loop
- 
-print('\nDone')
+if a > b:
+    # Do nothing
+    pass
