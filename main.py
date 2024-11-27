@@ -1,5 +1,6 @@
-def greet(name: str ):  # we are providing a type hint
-    print(f"Hello {name}")
+def do_somthing():
+    for i in range(2):
+        print("Doing something")
     
-    
-greet("John")
+
+do_somthing()
