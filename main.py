@@ -1,4 +1,5 @@
-def square(n):
-  return n * n
-
-print (square(2))
+def greet(name: str ):
+    print(f"Hello {name}")
+    
+    
+greet("John")
