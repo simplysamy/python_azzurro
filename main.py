@@ -1,3 +1,3 @@
-# Now use an ’anonymous’ loop variable
-for _ in range(0,10):
-    print('.', end='')
+for i in range(10, 0, -1):
+  print(f'{i},', end='')
+  
