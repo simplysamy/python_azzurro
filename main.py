@@ -1,8 +1,7 @@
-for i in range(5):
+i = 0
+while  i < 3:
     print(i, end=' ')
-    
-    if i == 2:
-        break
+    i += 1
 
 else:
-    print('Done')   
+    print('Sucessful')
