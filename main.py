@@ -1,6 +1,4 @@
-def print_msg(msg):
-  print(msg)
+def square(n):
+  return n * n
 
-print_msg('Hello World')
-print_msg('sam')
-print_msg('siri')
+print (square(2))
