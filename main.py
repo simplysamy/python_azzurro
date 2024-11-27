@@ -1,9 +1,14 @@
-for i in range(1, 10):
-  print(i)
+# Only print code if all iterations completed over a list
+
+print('Only print code if all iterations completed')
+
+num = int(input('Enter a number to check for: '))
+
+for i in range(0, 6):
+
+  if i == num:
+    break
+  print(i, ' ', end='')
   
-  if i % 2 == 1:
-      continue
-  print('hey its an even number')
-  print('we love even numbers')
-  
-print('\nDone')
+else:
+  print('\nAll iterations successful')
