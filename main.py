@@ -1,9 +1,5 @@
-def greeter(name: str,
-            title: str = 'Dr',
-            prompt: str = 'Welcome',
-            message: str = 'Live Long and Prosper'):
-    print(prompt, title, name, '-', message)
-    
-greeter ('john')
+def greeter(*args): # do not know how many arguments will be supplied when a function is called. 
+   for name in args:
+      print('Welcome', name)
 
-greeter('sam', prompt='Hi', title='Mr') # Named parameters - Order does not matter
+greeter('John', 'Denise', 'Phoebe', 'Adam', 'Gryff', 'Jasmine')
