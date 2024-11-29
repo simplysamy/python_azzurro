@@ -1,5 +1,5 @@
-def greet(name: str, greeting: str = "Hello", age: int=20):
-    print(f"{greeting}, {name}! Your age is {age}")
+def greet(name: str, greeting: str = "Hello"):
+    print(f"{greeting}, {name}!")
     
     
-greet("Jhon", 'Ciao', 10 )
+greet("Jhon")
