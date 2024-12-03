@@ -1,10 +1,7 @@
-def do_something(n: int):
-    print(n)
+def do_something(**kwargs):
+    print(kwargs)
     
-    if n==1:
-        print("done with the function")
-        return
+    print(kwargs['name'])
     
-    do_something(n-1) # recursive call - function calls itself
-    
-do_something(3)
+
+do_something(name='Sam', age=10) # Key words arguments are basically key value pairs
