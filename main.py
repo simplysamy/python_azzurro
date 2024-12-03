@@ -1,5 +1,11 @@
-def do_something(*args, **kwargs):
-    print(args)  # Tuple
-    print(kwargs) # DIctionary
+def standard_arg(arg):
+    print(arg)
     
-do_something("hello", name='Sam', age=10) 
+def pos_only_arg(arg, /):
+    print(arg)
+    
+def kw_only_arg(*, arg):
+    print(arg)
+    
+def combined_example(pos_only, /, standard, *, kw_only):
+    print(pos_only, standard, kw_only)
