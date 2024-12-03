@@ -8,4 +8,3 @@ def do_something(n: int):
     do_something(n-1) # recursive call - function calls itself
     
 do_something(3)
-    
