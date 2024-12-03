@@ -1,7 +1,5 @@
-def do_something(**kwargs):
-    print(kwargs)
+def do_something(*args, **kwargs):
+    print(args)  # Tuple
+    print(kwargs) # DIctionary
     
-    print(kwargs['name'])
-    
-
-do_something(name='Sam', age=10) # Key words arguments are basically key value pairs
+do_something("hello", name='Sam', age=10) 
