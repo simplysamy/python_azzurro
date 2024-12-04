@@ -13,3 +13,5 @@ def do_math():
         
     except Exception as e:
         print(f"An error occurred: {e}")
+
+do_math()
