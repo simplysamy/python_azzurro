@@ -1,4 +1,8 @@
-user_input: str = input("Enter a string: ")
+user_input = input("Enter a number: ")
 
-print(user_input)
-print(type(user_input))
+try:
+    number = float(user_input)
+    print(number)
+    
+except:
+    print("Invalid input")
