@@ -1,11 +1,4 @@
-def standard_arg(arg):
-    print(arg)
-    
-def pos_only_arg(arg, /):
-    print(arg)
-    
-def kw_only_arg(*, arg):
-    print(arg)
-    
-def combined_example(pos_only, /, standard, *, kw_only):
-    print(pos_only, standard, kw_only)
+user_input: str = input("Enter a string: ")
+
+print(user_input)
+print(type(user_input))
