@@ -4,5 +4,5 @@ try:
     number = float(user_input)
     print(number)
     
-except Exception as e:
-    print(e)
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
