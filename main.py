@@ -1,15 +1,4 @@
-user_input: str = input('You: ')
+user_input: str = input("Enter a number: ")
 
-try:
-    number = float(user_input)
-    print(number)
-
-except Exception as e:
-    print('Exception: ', e)
-    
-# If the above program runs into NO_Error then this block will run
-else: 
-    print("Successfully Executed the code")
-    
-finally:
-    print("This will always run")
+if user_input == '0':
+    raise Exception("Please don't enter 0")
