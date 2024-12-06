@@ -10,3 +10,6 @@ except Exception as e:
 # If the above program runs into NO_Error then this block will run
 else: 
     print("Successfully Executed the code")
+    
+finally:
+    print("This will always run")
