@@ -1,17 +1,12 @@
-def do_math():
-    user_input = input("Enter a number: ")
+user_input: str = input('You: ')
 
-    try:
-        number = float(user_input)
-        print(number)
-        
-    except ValueError:
-        print("Invalid input. Please enter a valid number.")
-        
-        do_math() # recursion
-        
-        
-    except Exception as e:
-        print(f"An error occurred: {e}")
+try:
+    number = float(user_input)
+    print(number)
 
-do_math()
+except Exception as e:
+    print('Exception: ', e)
+    
+# If the above program runs into NO_Error then this block will run
+else: 
+    print("Successfully Executed the code")
