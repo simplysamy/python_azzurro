@@ -1,3 +1,3 @@
-import sample_module
+import sample_module as sam # alias
 
-sample_module.hello()
+sam.hello()
