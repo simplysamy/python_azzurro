@@ -1,3 +1,4 @@
-import sample_module as sam # alias
+from sample_module import hello as hello_sm # aliasing
 
-sam.hello()
+
+hello_sm()
