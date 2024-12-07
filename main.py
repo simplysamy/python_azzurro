@@ -1,3 +1,5 @@
-from random import *
+import sample_package.sample_module1 as sm1
+import sample_package.sample_module2 as sm2
 
-print(randint(0, 100))
+sm1.hello()
+sm2.hello()
