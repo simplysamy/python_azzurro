@@ -1,4 +1,3 @@
-user_input: str = input("Enter a number: ")
+import random
 
-if user_input == '0':
-    raise Exception("Please don't enter 0")
+print(random.randint(1, 10))
