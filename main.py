@@ -1,3 +1,10 @@
-import requests 
+# old approach for reading a file
 
-requests.get('https://google.com')
+# file = open("sample.txt")
+# text = file.read()
+# file.close()
+
+with open("sample.txt") as file:
+    text = file.read()
+
+print(text)
