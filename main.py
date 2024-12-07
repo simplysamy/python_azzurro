@@ -1,4 +1,3 @@
-from sample_module import hello as hello_sm # aliasing
+from random import *
 
-
-hello_sm()
+print(randint(0, 100))
