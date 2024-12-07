@@ -1,3 +1,3 @@
-import random
+import sample_module
 
-print(random.randint(1, 10))
+sample_module.hello()
