@@ -1,12 +1,8 @@
-a = 0.1 + 0.2  # Result is slightly more than 0.3
-b = 0.3
-epsilon = 1e-17  # Set a small tolerance level
+price1 = 19.99
+price2 = 19.99 + 0.0000000001  # Slightly more than 19.99
+epsilon = 1e-10  # Set a very tight tolerance level
 
-# Standard comparison
-print(a == b)  # This will output False
-
-# Using tolerance level
-if abs(a - b) < epsilon:
-    print("a is approximately equal to b")
+if abs(price1 - price2) < epsilon:
+    print("Prices are approximately equal")  # This will be printed
 else:
-    print("a is not equal to b")  # This will be printed
+    print("Prices are not equal")
