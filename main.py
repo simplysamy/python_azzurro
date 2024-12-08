@@ -1,10 +1,14 @@
 # If it contains no value, then it is empty & evaluate to False
-empty_list = []
-empty_tuple = ()
-empty_set = set()
-empty_string = ''
-empty_range = range(0)
 
-zero_int       = 0
-zero_float   = 0.0
-zero_complex = 0j 
+# Examples of falsy values
+if not []:
+    print("Empty list is falsy")  # This will be printed
+
+if not "":
+    print("Empty string is falsy")  # This will be printed
+
+if not 0:
+    print("Zero is falsy")  # This will be printed
+
+if not None:
+    print("None is falsy")  # This will be printed
