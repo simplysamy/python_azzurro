@@ -1,12 +1,14 @@
-# Examples of truthy values
-if [1, 2, 3]:
-    print("Non-empty list is truthy")  # This will be printed
+from enum import Enum
 
-if "hello":
-    print("Non-empty string is truthy")  # This will be printed
+# Checkfing the sate of the light lamp
+class state(Enum):
+    OFF = 0
+    ON = 1
 
-if 42:
-    print("Non-zero number is truthy")  # This will be printed
+state_of_lamp = state.OFF
 
-if {"key": "value"}:
-    print("Non-empty dictionary is truthy")  # This will be printed
+if state_of_lamp == state.ON:
+    print("The lamp is on")
+else:
+    print("The lamp is off")
+
