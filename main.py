@@ -1,16 +1,18 @@
 from enum import Enum
 
 # Checkfing the sate of the light lamp
-class state(Enum):
-    OFF = 0
-    ON = 1
+class Color(Enum):
+    RED = 'red'
+    GREEN = 'green'
+    BLUE = 'blue'
+    
+color = Color.GREEN
 
-state_of_lamp = state.OFF
-
-print(f'The state of the lamp is', state.OFF.value) # Get the value of the state of the lamp
-
-if state_of_lamp == state.ON:
-    print("The lamp is on")
-else:
-    print("The lamp is off")
+if color == Color.RED:
+    # print('The color is red')
+    print(f'The color is', color.value) # get the value
+elif color == Color.GREEN:
+    print(f'The color is', color.name)  # get the name
+elif color == Color.BLUE:
+    print('The color is blue')
 
