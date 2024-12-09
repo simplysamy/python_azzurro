@@ -1,9 +1,11 @@
-z = 30  # Global variable
+def outer_function():
+    x = 10
+    
+    def inner_function():
+        x = 5  # This creates a new local variable x in inner_function
+        print("Inner function, x =", x)
+    
+    inner_function()
+    print("Outer function, x =", x)
 
-def my_function():
-    global z  # Declare z as global to modify it
-    z = 40   # Modify the global variable
-    print("Inside the function, z =", z)
-
-my_function()  # Modify and print z
-print("Outside the function, z =", z)  # Accessing the modified global variable
+outer_function()
