@@ -1,10 +1,9 @@
-var = 10 # global variable
+z = 30  # Global variable
 
-def print_variable():
-    var = 20
-    print('inside the fucntion', var)
-    
-print_variable()
+def my_function():
+    global z  # Declare z as global to modify it
+    z = 40   # Modify the global variable
+    print("Inside the function, z =", z)
 
-print('Outside the fucntion',var)  # 
-    
+my_function()  # Modify and print z
+print("Outside the function, z =", z)  # Accessing the modified global variable
