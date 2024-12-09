@@ -6,5 +6,5 @@ def print_variable():
     
 print_variable()
 
-print(var2)
+print(var2)  # This will raise a NameError
     
