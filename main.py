@@ -1,9 +1,10 @@
 var = 10 # global variable
 
 def print_variable():
-    print(var)
+    var = 20
+    print('inside the fucntion', var)
     
 print_variable()
 
-print(var)  # 
+print('Outside the fucntion',var)  # 
     
