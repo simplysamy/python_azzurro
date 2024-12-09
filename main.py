@@ -1,10 +1,9 @@
-var = 10
+var = 10 # global variable
 
 def print_variable():
-    var2 = 20
     print(var)
     
 print_variable()
 
-print(var2)  # This will raise a NameError
+print(var)  # 
     
