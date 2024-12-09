@@ -1,3 +1,10 @@
-import sample_module
+var = 10
 
-print("Code is running")
+def print_variable():
+    var2 = 20
+    print(var)
+    
+print_variable()
+
+print(var2)
+    

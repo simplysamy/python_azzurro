@@ -1,6 +1,9 @@
-def do_something():
-    print("Hello from sample_module")   
+var = 10
+
+def print_variable():
+    var2 = 20
+    print(var)
     
-if __name__ == "__main__": # if we are running this file directly, then run the following code
-    do_something()
+print_variable()
+print(var)
     
