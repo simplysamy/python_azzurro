@@ -1,14 +1,5 @@
-sample_list = []
+people: str = ['sam', 'luigi', 'mario']
 
-for i in range(10):
-    if i % 2 == 0:
-        sample_list.append(i)
-    
-print(sample_list)
+cap_people = [person.upper() for person in people]  # person for each person in people list
 
-
-# List Comprehension
-
-sample_list2 = [i*2 for i in range(10) if i % 2 == 0] 
-
-print(sample_list2)
+print(cap_people)
