@@ -1,13 +1,13 @@
-def outer_function():
-    count = 0  # A variable to keep track of counts
+sample_list = []
+
+for i in range(10):
+    sample_list.append(i)
     
-    def inner_function():
-        nonlocal count  # Indicating we will modify count in the outer_function
-        count += 1  # Increment the count
-        print("Count in inner function:", count)
+print(sample_list)
 
-    inner_function()  # Call it a few times
-    inner_function()
-    inner_function()
 
-outer_function()
+# List Comprehension
+
+sample_list2 = [i for i in range(10)] 
+
+print(sample_list2)
