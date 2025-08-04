@@ -6,7 +6,11 @@ class Car:
     
     def __str__(self):
         return f'{self.color} {self.model}'
+    
+    def __repr__(self):
+        return f'Car(model={self.model}, color={self.color})'
         
 if __name__ == "__main__":
-    car1 = Car("Toyota", "red")
-    print(car1)  # Output: red Toyota
+    car = Car("Toyota", "red")
+    print(car)  # Output: red Toyota
+    print(car.__repr__())  # Output: Car(model=Toyota, color=red)
